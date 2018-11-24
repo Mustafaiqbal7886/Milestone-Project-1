@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Monkees - Home</title>
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Martel:900" rel="stylesheet">
+    <!--Importing Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Importing FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/Styles/style.css" type="text/css" />
+    <style>
+    body{
+        background-color: rgb(33,37,43);
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav class="navbar d-flex justify-content-between navbar-expand-md nav-custom">
+        <a class="navbar-brand" href="./index.html">
+            <img class="monkee-nav-logo" src="./Assets/Images/monkees-logo.png" alt="monkees logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks" 
+        aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navlinks">
+            <ul class="navbar-nav ml-auto p-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Bios.html">Bios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./music.html">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./videos.html">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./bookus.html">Book Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- Start of the header section -->
+        <header class="fluid-container splash">
+            <div class="row px-0 mx-0">
+                <div class="col-10 offset-1 col-lg-6 offset-lg-3">
+                    <!-- Header Images of the Monkees -->
+                    <div class="col-12  col-12 col-xl-10 offset-xl-1">
+                        <img class="monkee-hero img-thumbnail" src="./Assets/Images/monkees-hero.jpg" alt="monkees looking behind images">
+                    </div>
+                    <!-- header text -->
+                    <div class="col-12 monkee-intro">
+                        <h1 class="monkee-font text-center title">Hey. Hey. we are..<br>The Monkees!!</h1>
+                        <h2 class="monkee-font text-center sub-title">The Monkees were formed in L.A in 1965 by Bob Rafelson and Bert Schneider</h4>
+                        <div class="button-wrapper end-of-section">
+                            <a class="mx-auto" href="./Bios.html">
+                                <button class="monkee-font monkee-button white-on-red mx-auto"> 
+                                    Are You Monkees? 
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End of header text -->
+                </div>
+            </div>
+        </header>
+        <!-- End of the header section -->
+        <!-- Start of the tour section -->
+        <section class="fluid-container gigs">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-xl-3 offset-xl-2">
+                        <img src="./Assets/Images/title.jpg" class="mx-auto tour-logo" alt="Tour: The Mike and Mickey Show">
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-4 dates">
+                        <!-- Start of the first tour date -->
+                        <article class="row">
+                            <div class="d-flex px-0 justify-content-end col-3">
+                                <div class="date">mar <br> 5<br>2019 </div>
+                            </div>
+                            <div class="col-9">
+                                <h3 class="city-state">Glenside, PA</h3>
+                                <h4 class="Venue">Venue
+                                    Count Basie Center for the Arts
+                                    St. Red Bank, NJ, US</h4>
+                                <div class="button-wrapper mb-2">
+                                    <a href="https://www.axs.com/events/350448/the-monkees-tickets?soc=KEZ_FACEBOOK" target="_blank">
+                                    <button class="header-font monkee-button white-on-red"> 
+                                        Tickets 
+                                    </button>
+                                    </a>
+                                </div>
+                                <div class="bottom-border"></div>
+                            </div>
+                        </article>
+                        <!-- End of the first tour date -->
+                        <!-- Start of the second tour date -->
+                        <article class="row">
+                            <div class="col-3 d-flex px-0 justify-content-end ">
+                                <div class="date">Mar <br> 9<br>2019</div>
+                            </div>
+                            <div class="col-9">
+                                <h3 class="city-state"></h3>
+                                <h4 class="Venue">The Paramount Huntington ,
+                                    New York, US
+                                </h4>
+                                <div class="button-wrapper mb-2">
+                                    <button onclick="soldOut()" class="header-font monkee-button white-on-red"> 
+                                        Tickets 
+                                    </button>
+                                </div>
+                                <div class="bottom-border"></div>
+                            </div>
+                        </article>
+                        <!-- End of the second tour date -->
+                    </div>
+                    <!-- Mid and larger only section to show additional image of the band and -->
+                    <div class="d-none d-md-block col-md-2 band"></div>
+                </div>
+                <!-- More Tour dates button row -->
+                <div class="row d-flex justify-content-center">
+                    <div class="button-wrapper mb-4">
+                        <a href="https://www.facebook.com/pg/TheMonkees/events/?ref=page_internal" target="_blank">
+                             <button class="monkee-font monkee-button white-on-red"> 
+                                 More Tour Dates 
+                             </button>
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of the tour section -->
+        <!-- Start of the news section -->
+        <section class="fluid-container news">
+            <div class="row px-0 mx-0">
+                <!-- Start of the first news item -->
+                <article class="d-flex px-0 flex-column col-12 col-md-6 col-lg-12 merch">
+                    <div class="row px-0 mx-0 my-5">
+                        <div class="col-12 col-lg-4 offset-lg-1 offset-xl-2 text-lg-left">
+                            <div class="news-content">
+                                <p class="monkee-font title">New t-shirts AVAILABLE NOW!</p>
+                                <p class="text">
+                                    S A L E!! Buy One Get One Free!<br>
+                                    sale is on all of your favorite merchandise & albums for a limited time !
+                                </p>
+                            </div>
+                            <div class=" mx-auto button-wrapper mt-5">
+                                <a class="mx-auto" href="https://monkeesstore.warnermusic.com/" target="_blank">
+                                     <button class="monkee-font monkee-button white-on-dblue"> 
+                                         Shop Now
+                                     </button>
+                                 </a>
+                            </div>
+                        </div>
+                        <div class=" px-0 d-none d-lg-block col-lg-7 col-xl-6 news-picture-box">
+                            <img src="./Assets/Images/monkees-shirt.jpg" alt="Sample Shirts">
+                        </div>
+                    </div>
+                </article>
+                <!-- End of the first news item -->
+                <!-- Start of the second news item -->
+                <article class="d-flex px-0 flex-column col-12 col-md-6 col-lg-12 family">
+                    <div class="row mx-0 px-0 my-5">
+                        <div class="col-12 col-lg-4 offset-lg-1  offset-xl-2 text-lg-left">
+                            <div class="news-content">
+                                <p class="monkee-font title">
+                                    Monkee Club!!
+                                </p>
+                                <p class="monkee-font sub-title">
+                                    The Official Monkee Fan Club!!
+                                </p>
+                                <p class="text off-white">
+                                    Join the Monkee Club today for special membership invitation to concerts along with special discounts on The Monkee merchandise in online store. HURRRY!!
+                                </p>
+                            </div>
+                            <div class=" mx-auto button-wrapper mt-5">
+                                <a class="mx-auto" href="" data-toggle="modal" data-target="#mailing-list">
+                                     <button class="monkee-font d-block mx-auto monkee-button white-on-dblue"> 
+                                         Sign Up here
+                                     </button>
+                                 </a>
+                            </div>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-7 col-xl-6 news-picture-box">
+                            <img src="./Assets/Images/fanmail.png" alt="Image of Fan Mail">
+                        </div>
+                    </div>
+                </article>
+                <!-- End of the second news item -->
+            </div>
+            </section>
+            <!-- End of the news section -->
+            <!-- Start of the Media Section -->
+            <section class="fluid-container new-media py-5">
+                <!-- Section Title-->
+                <div class="row px-0 mx-0">
+                    <div class="col-12">
+                        <p class="monkee-font title">LETS DANCE!</p>
+                    </div>
+                </div>
+                <div class="row px-0 mx-0">
+                    <div class="col-12 col-xl-8 offset-xl-2">
+                        <div class="row">
+                            <!-- Album and Videos 1 -->
+                            <article class="col-12 col-md-6 col-lg-4">
+                                <p class="monkee-font sub-title album-title">More Greatest Hits</p>
+                                <img class="img-fluid media-image" src="./Assets/Images/album.jpg" alt="more greatest hits cover" />
+                                <div class="button-block end-of-section">
+                                    <div class="button-wrapper d-inline-block">
+                                        <a href="./videos.html">
+                                             <button class="monkee-font monkee-button white-on-lblue"> 
+                                                 Videos
+                                             </button>
+                                         </a>
+                                    </div>
+                                    <div class=" button-wrapper d-inline-block">
+                                        <a href="./music.html">
+                                             <button class="monkee-font monkee-button white-on-lblue"> 
+                                                 Songs
+                                             </button>
+                                         </a>
+                                    </div>
+                                    <div class="button-wrapper d-inline-block">
+                                        <a href="https://www.amazon.com/More-Greatest-Hits-Monkees/dp/B000VW4D7Il">
+                                             <button class="monkee-font monkee-button white-on-lblue"> 
+                                                 Purchase
+                                             </button>
+                                         </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Album and Videos 2 -->
+                            <article class="col-12 col-md-6 col-lg-4 ">
+                                <p class="monkee-font sub-title album-title">The Greatest Hits</p>
+                                <img class="img-fluid media-image" src="./Assets/Images/cover.jpg" alt="greatest hits cover" />
+                                <div class="button-block end-of-section">
+                                    <div class="button-wrapper d-inline-block">
+                                        <a href="https://www.amazon.com/Monkees-Greatest-Hits/dp/B0000033O3">
+                                             <button class="monkee-font monkee-button white-on-lblue"> 
+                                                 Purchase
+                                             </button>
+                                         </a>
+                                    </div>
+                                </div>
+
+                            </article>
+                            <!-- Album and Videos 3 -->
+                            <article class="col-12 d-md-none d-lg-block col-lg-4">
+                                <p class="monkee-font sub-title album-title">Monkee's Christmas Party</p>
+                                <img class="img-fluid media-image" src="./Assets/Images/christmas.jpg" alt="Christmas Party Cover" />
+                                <div class="button-block">
+                                    <div class="button-wrapper d-inline-block">
+                                        <a href="https://monkeesstore.warnermusic.com/music/christmas-party.html">
+                                             <button class="monkee-font monkee-button white-on-lblue"> 
+                                                 Purchase
+                                             </button>
+                                         </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of the Media Section-->
+    </main>
+    <footer>
+        <div class="row mx-0 px-0">
+            <div class="col-4 d-none d-md-block text-center ">
+                <p>Sitemap</p>
+                <ul class="sitemap">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./Bios.html">
+                        <li>Bios</li>
+                    </a>
+                    <a href="./music.html">
+                        <li>Music</li>
+                    </a>
+                    <a href="./videos.html">
+                        <li>Video</li>
+                    </a>
+                    <a href="./gallery.html">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="./bookus.html">
+                        <li>Book Us</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="col-12 offset-md-4 col-md-4 text-center">
+                <p>follow us on social media</p>
+                <div class="social-block">
+                    <div>
+                        <!-- facebook icon -->
+                        <a href="https://www.facebook.com/TheMonkees/" target="_blank" class="social-button">
+                        <i class="fab fa-facebook-square ml-2 mr-2">
+                        </i>
+                    </a>
+                    </div>
+                    <div>
+                        <!-- instagram icon -->
+                        <a href="https://www.instagram.com/themonkees/?hl=en" target="_blank" class="social-button">
+                        <i class="fab fa-instagram ml-2 mr-2">
+                            
+                        </i>
+                    </a>
+                    </div>
+                    <div>
+                        <!-- twitter icon -->
+                        <a href="https://twitter.com/themonkees?lang=en" target="_blank" class="social-button">
+                        <i class="fab fa-twitter-square ml-2 mr-2">
+                        </i>
+                    </a>
+                    </div>
+                    <!-- youtube icon -->
+                    <div><a href="https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA" target="_blank" class="social-button">
+                    <i class="fab fa-youtube ml-2 mr-2">
+                    </i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mailing-list" tabindex="-1" role="dialog" aria-labelledby="mailing-list-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                    <img src="./Assets/Images/monkees-logo.png" style="height:50px;">
+                    <div>
+                        <h5 class="monkee-font modal-title" id="mailing-list-label"> Join <br> The Monkees Official FanClub</h5>
+                    </div>
+                    <div class="button=wrapper" style="height:30px">
+                        <button type="button" class="monkee-font monkee-button white-on-red" data-dismiss="modal">
+                           x
+                        </button>
+                    </div>
+                </div>
+                <div class="off-white modal-body">
+                    <p>Please Enter Your Details to Join Our FanClub!</p>
+                    <input required class="form-control" type="text" name="email" placeholder="Email Address">
+                    <p class="my-4">We will NOT share your  details with Third party</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="button-wrapper mx-auto" style="height:50px">
+                        <button type="button" class="monkee-font monkee-button white-on-dblue " onclick="mailingListJoined()" data-dismiss="modal">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Importing JQuery, Popper and  Bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- import back to to button -->
+    <script src="./Assets/Scripts/backToTop.js"></script>
+    <script>
+        function soldOut() {
+            alert("oOoppss!!!  All Tickets are Sold Out, Sorry")
+        }
+
+        function mailingListJoined() {
+            alert("You have been added to the Monkee club Mailing List, thank you")
+        }
+    </script>
+
+</body>
+
+</html>
